@@ -1,0 +1,78 @@
+{
+  "manifest": {
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:**************************"
+        },
+        "regions": {
+          "EU": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:*******************************"
+            }
+          },
+          "NA": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:*******************************"
+            }
+          },
+          "FE": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:*******************************"
+            }
+          }
+        }
+      }
+    },
+    "events": {
+      "endpoint": {
+        "uri": "arn:aws:lambda:*******************************"
+      },
+      "publications": [
+        {
+          "eventName": "AMAZON.MessageAlert.Activated"
+        }
+      ],
+      "subscriptions": [
+        {
+          "eventName": "SKILL_PROACTIVE_SUBSCRIPTION_CHANGED"
+        }
+      ]
+    },
+    "manifestVersion": "1.0",
+    "permissions": [
+      {
+        "name": "alexa::devices:all:notifications:write"
+      }
+    ],
+    "privacyAndCompliance": {
+      "locales": {
+        "ja-JP": {}
+      }
+    },
+    "publishingInformation": {
+      "automaticDistribution": {
+        "isActive": false
+      },
+      "category": "WEATHER",
+      "distributionCountries": [],
+      "isAvailableWorldwide": true,
+      "locales": {
+        "ja-JP": {
+          "description": "10時-15時の間で\n一時間後に雨が降る場合は洗濯物をしまうように通知します。\n10時-12時の間で\n一時間後に雨が止む場合は洗濯物を干すように通知します。",
+          "examplePhrases": [
+            "アレクサ、ハローワールドを開いて",
+            "こんにちは",
+            "ヘルプ"
+          ],
+          "keywords": [],
+          "largeIconUri": "https://*******************************",
+          "name": "洗濯物屋さん",
+          "smallIconUri": "https://*******************************",
+          "summary": "洗濯物を守ります"
+        }
+      },
+      "testingInstructions": "Sample Testing Instructions."
+    }
+  }
+}
